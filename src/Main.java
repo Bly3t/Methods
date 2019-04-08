@@ -8,7 +8,7 @@ public class Main {
         Scanner reader = new Scanner(System.in);
         System.out.print("Give a_length: ");
         int x = reader.nextInt();
-        System.out.print("Give r_bound: "); // does that work?
+        System.out.print("Give r_bound: ");
         int y = reader.nextInt();
         Methods object = new Methods();
         object.Randomize(x, y);
