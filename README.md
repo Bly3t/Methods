@@ -1,1 +1,2 @@
-Basics of basic in JAVA
+
+**Basics of basic in JAVA**
