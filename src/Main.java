@@ -10,6 +10,7 @@ public class Main {
         int x = reader.nextInt();
         System.out.print("Give r_bound: ");
         int y = reader.nextInt();
+
         Methods object = new Methods();
         object.Randomize(x, y);
     }
