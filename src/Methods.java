@@ -1,13 +1,16 @@
 import java.util.Random;
 
-public class Methods {
+ class Methods {
 
-    public void Palindrome(String word) {
+         Methods()
+        {}
+
+     void Palindrome(String word) {
         StringBuilder builder = new StringBuilder(word);
-        System.out.printf(word.equals(builder.reverse().toString()) ? "true" : "false");
+        System.out.print(word.equals(builder.reverse().toString()) ? "true" : "false");
     }
 
-    public void Randomize(int a_length, int r_bound) {
+    void Randomize(int a_length, int r_bound) {
         int[] array = new int[a_length];
         Random number = new Random();
 
