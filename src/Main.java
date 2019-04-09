@@ -1,13 +1,13 @@
 import java.lang.reflect.Method;
 import java.util.Scanner;
 
-
+// @SuppressWarnings("unchecked") Fixed generic type of class_name
 public class Main {
 
     public static void main(String[] args) {
         try {
             Methods method = new Methods();
-            Class class_name = method.getClass();
+            Class<?> class_name = method.getClass();
             Method[] method_list = class_name.getDeclaredMethods();
             System.out.println("List of Methods:");
             for(Method list : method_list)
