@@ -1,7 +1,7 @@
 import java.lang.reflect.Method;
 import java.util.Scanner;
 
-// @SuppressWarnings("unchecked") Fixed generic type of class_name
+// @SuppressWarnings("unchecked") Fixed raw type of class_name
 public class Main {
 
     public static void main(String[] args) {
