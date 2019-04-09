@@ -1,15 +1,31 @@
+import java.lang.reflect.Method;
 import java.util.Scanner;
+
 
 public class Main {
 
     public static void main(String[] args) {
-        Scanner reader = new Scanner(System.in);
-        System.out.print("Give a_length: ");
-        int x = reader.nextInt();
-        System.out.print("Give r_bound: ");
-        int y = reader.nextInt();
+        try {
+            Methods method = new Methods();
+            Class class_name = method.getClass();
+            Method[] method_list = class_name.getDeclaredMethods();
+            System.out.println("List of Methods:");
+            for(Method list : method_list)
+            {
+                System.out.println("-- "+list.getName());
+            }
 
-        Methods object = new Methods();
-        object.Randomize(x, y);
+            Scanner r_main = new Scanner(System.in);
+            System.out.print("Give method's name: ");
+            String param = r_main.nextLine();
+            Method method_calling = class_name.getDeclaredMethod(param);
+            method_calling.invoke(method);
+        }
+
+        catch(Exception ex)
+        {
+            System.out.println(ex.getMessage());
+        }
+
     }
 }
